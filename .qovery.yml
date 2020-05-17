@@ -2,12 +2,16 @@ application:
   name: waitlisted-hasura
   project: waitlisted
   cloud_region: aws/us-east-2
+  publicly_accessible: true
 databases:
 - type: postgresql
   version: "11.7"
   name: waitlisted-database
 routers:
 - name: main
+  custom_domains:
+    - branch: master
+      domain: waitlisted.appixel.dev
   routes:
   - application_name: waitlisted-hasura
     paths:
