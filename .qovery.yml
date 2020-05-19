@@ -15,4 +15,4 @@ routers:
   routes:
   - application_name: waitlisted-hasura
     paths:
-    - /hasura/
+    - /*
