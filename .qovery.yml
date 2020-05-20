@@ -1,6 +1,6 @@
 application:
   name: waitlisted-hasura
-  project: waitlisted
+  project: appixel-waitlisted
   cloud_region: aws/us-east-2
   publicly_accessible: true
 databases:
